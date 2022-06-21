@@ -1,6 +1,6 @@
 pipeline {
 	environment {
-        DOCKER_ID = "fallewi"
+        DOCKER_ID = "eazytraining"
         IMAGE_TAG = "${BUILD_NUMBER}"
 	REPOSITORY_NAME = "payment"	
 	}
