@@ -16,7 +16,8 @@ stages{
 		    steps {
 					script {
 						sh '''
-                            docker build -t $DOCKER_ID/$REPOSITORY_NAME:$IMAGE_TAG .
+						mvn clean install
+                            			docker build -t $DOCKER_ID/$REPOSITORY_NAME:$IMAGE_TAG .
 						'''
 					}
 		    }
